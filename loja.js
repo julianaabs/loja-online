@@ -9,5 +9,5 @@ function Produto(){
 
 function Carrinho(){
 	this.dono;
-	this.produtos;
+	this.produtos[];
 }
