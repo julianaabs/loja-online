@@ -1,12 +1,22 @@
-div#formLogin{
+.formLogin{
 	display: none;
 	visibility: hidden;
 }
 
-div#col-sm{
+.col-sm{
 	margin: 10px auto;
 	/*align-content: center; */
 	align-items: center;
 	display: inline-block;
 
+}
+
+div#cervo{
+	max-width: 150px;
+	max-height: 150px;
+}
+
+img{
+	max-height: 350px;
+	max-width: 350px;
 }

@@ -5,33 +5,169 @@
 	<title>LOJA</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+	<link rel="stylesheet" href="loja.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
+	<script src="loja.js" type="text/javascript"></script>
 </head>
 <body>
-	<div class="container">
+	<div class="page-header">
 		<div class="row justify-content-center">
-			<div class="col-sm">
-				<h1>Loja Online</h1>
-				<p>Bem-vindo à Loja Online</p>
+			<div class="col-sm-6">
+				<h1>Pelúcias da Jujuba</h1>
+				<p class="lead">Bem-vindo às Pelúcias da Jujuba! Aqui você encontrará diversas pelúcias por preços bem bacanas!</p>
 			</div>		
-			<div class="col-sm">
-				<button>Login</button>
-				<button>Sair</button>
+			<div class="col-sm-4">
+				<button type="button" class="btn btn-outline-primary">Login</button>
+				<button type="button" class="btn btn-outline-primary">Sair</button>
 			</div>		
 	</div>
 	<div id="formLogin" class="container">
-		<form>
-			<div class="form-group">
-				<label for="nome">Nome: </label>
-				<input type="text" class="form-control" id="nomeLogin">
+		<div class="row justify-content-center">
+			<div class="col-sm-4" >
+				<form>
+					<div class="form-group">
+						<label for="nome">Nome: </label>
+						<input type="text" class="form-control" id="nomeLogin">
+					</div>
+					<input type="button" class="btn btn-primary" value="Entrar" onclick="Entrar()"></input>
+					</div>
+				</form>
 			</div>
-			<div class="form-group">
-				<label for="email">E-mail:</label>
-				<input type="email" class="form-control" id="email">
+		</div>
+	</div>
+	<div class="container">
+		<div class="row justify-content-center">
+			<div class="col-xs-4 col-sm-4">
+				<div class="panel panel-default justify-content-center">
+					<img class="img-rounded" src="Itens/cervo.jpg">
+					<p id="cervo-nome" class="text-center"></p>
+					<p class="text-center">Preço:</p>
+					<p id="cervo-preco" class="text-center"></p>
+					<input type="button" class="btn btn-primary" value="Comprar"></input>
+				</div>
 			</div>
-			<button>Entrar</button>
+			<div class="col-xs-4 col-sm-4">
+				<div class="panel panel-default">
+					<img class="img-rounded" src="Itens/elefante.jpg">
+					<p id="elefante-nome" class="text-center"></p>
+					<p class="text-center">Preço:</p>
+					<p id="elefante-preco" class="text-center"></p>
+					<input type="button" class="btn btn-primary" value="Comprar"></input>
+				</div>
+			</div>
+			<br>
+			<div class="col-xs-4 col-sm-4">
+				<div class="panel panel-default">
+					<img class="img-rounded" src="Itens/frango.jpg">
+					<p id="frango-nome" class="text-center"></p>
+					<p class="text-center">Preço:</p>
+					<p id="frango-preco" class="text-center"></p>
+					<input type="button" class="btn btn-primary" value="Comprar"></input>
+				</div>
+			</div>
+			<br>
+		</div>
+		<br>
+		<div class="row justify-content-center">
+			<div class="col-xs-4 col-sm-4">
+				<div class="panel panel-default">
+					<img class="img-rounded" src="Itens/tartaruga.png">
+					<p id="tartaruga-nome" class="text-center"></p>
+					<p class="text-center">Preço:</p>
+					<p id="tartaruga-preco" class="text-center"></p>
+					<input type="button" class="btn btn-primary" value="Comprar"></input>
+				</div>
+			</div>
+			<br>
+			<div class="col-xs-4 col-sm-4">
+				<div class="panel panel-default">
+					<img class="img-rounded" src="Itens/girafa.jpg">
+					<p id="girafa-nome" class="text-center"></p>
+					<p class="text-center">Preço:</p>
+					<p id="girafa-preco" class="text-center"></p>
+					<input type="button" class="btn btn-primary" value="Comprar"></input>
+				</div>
+			</div>
+			<br>
+			<div class="col-xs-4 col-sm-4">
+				<div class="panel panel-default">
+					<img class="img-rounded" src="Itens/kermit.jpg">
+					<p id="kermit-nome" class="text-center"></p>
+					<p class="text-center">Preço:</p>
+					<p id="kermit-preco" class="text-center"></p>
+					<input type="button" class="btn btn-primary" value="Comprar"></input>
+				</div>
+			</div>
+			<br>
+		</div>
+		<br>
+		<div class="row justify-content-center">
+			<div class="col-xs-4 col-sm-4">
+				<div class="panel panel-default">
+					<img class="img-rounded" src="Itens/ourico.jpg">
+					<p id="ourico-nome" class="text-center"></p>
+					<p class="text-center">Preço:</p>
+					<p id="ourico-preco" class="text-center"></p>
+					<input type="button" class="btn btn-primary" value="Comprar"></input>
+				</div>
+			</div>
+			<br>
+			<div class="col-xs-4 col-sm-4">
+				<div class="panel panel-default">
+					<img class="img-rounded" src="Itens/ovelha.jpg">
+					<p id="ovelha-nome" class="text-center"></p>
+					<p class="text-center">Preço:</p>
+					<p id="ovelha-preco" class="text-center"></p>
+					<input type="button" class="btn btn-primary" value="Comprar"></input>
+				</div>
+			</div>
+			<br>
+			<div class="col-xs-4 col-sm-4">
+				<div class="panel panel-default">
+					<img class="img-rounded" src="Itens/pinguim.jpg">
+					<p id="pinguim-nome" class="text-center"></p>
+					<p class="text-center">Preço:
+					<p id="pinguim-preco" class="text-center"></p>
+					<input type="button" class="btn btn-primary" value="Comprar"></input>
+				</div>
+			</div>
+			<br>
+		</div>
+		<br>
+		<div class="row justify-content-center">
+			<div class="col-xs-4 col-sm-4">
+				<div class="panel">
+					<img class="img-rounded" src="Itens/urso.jpg">
+					<p id="ursoNatal-nome" class="text-center"></p>
+					<p class="text-center">Preço:</p>
+					<p id="ursoNatal-preco" class="text-center"></p>
+					<input type="button" class="btn btn-primary" value="Comprar"></input>
+				</div>
+			</div>
+			<br>
+			<div class="col-xs-4 col-sm-4">
+				<div class="panel">
+					<img class="img-rounded" src="Itens/urso2.jpg">
+					<p id="urso-nome" class="text-center"></p>
+					<p class="text-center">Preço:</p>
+					<p id="urso-preco" class="text-center"></p>
+					<input type="button" class="btn btn-primary" value="Comprar"></input>
+				</div>
+			</div>
+			<br>
+			<div class="col-xs-4 col-sm-4">
+				<div class="panel">
+					<img class="img-rounded" src="Itens/hipopotamo.jpg">
+					<p id="hipopotamo-nome" class="text-center"></p>
+					<p class="text-center">Preço:</p>
+					<p id="hipopotamo-preco" class="text-center"></p>
+					<input type="button" class="btn btn-primary" value="Comprar"></input>
+				</div>
+			</div>
+		</div>
+
 	</div>
 </body>
 </html>
